@@ -23,6 +23,8 @@ const PageHeader: React.FC<PageHeaderProps> = ({title, subTitle, children}) => (
 
         <div className="header-content">
             <strong>{title}</strong>
+            { subTitle && <p>{subTitle}</p> }
+            
 
             {children}
         </div>
